@@ -1,5 +1,5 @@
 class papa;
-  bit [3:0]len;
+  bit [3:0]len;  //property
   bit [3:0] width;
   
 endclass
@@ -7,7 +7,7 @@ endclass
 class son extends papa;
   
   bit [6:0] area;
-  function sqr;
+  function sqr; //methods
    area = len * width;
        $display("area=%d",area); 
   endfunction
